@@ -1,0 +1,10 @@
+{
+    "name": "node-app",
+    "version": "1.0.0",
+    "description": "A simple Node.js app for GitHub Action PR testing",
+    "main": "src/app.js",
+    "scripts": {
+        "test": "bash test/test.sh"
+    },
+    "dependencies": {}
+}
