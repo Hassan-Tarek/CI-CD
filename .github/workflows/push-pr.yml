@@ -1,0 +1,20 @@
+on: 
+  push:
+    branches:
+      - main
+      - "release/**"
+    paths:
+      - "src/**"
+      - "test/**"
+  pull_request:
+    branches:
+      - main
+      - "release/**"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.1
+      - name: Run tests
+        run: mvn test
