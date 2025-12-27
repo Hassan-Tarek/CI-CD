@@ -2,7 +2,7 @@
 
 EXPECTED="Hello, Hassan!"
 
-OUTPUT=$(node -e "console.log(require('../src/app')('Hassan'))")
+OUTPUT=$(node -e "console.log(require('./src/app')('Hassan'))")
 
 if [ "$OUTPUT" == "$EXPECTED" ] then
 
